@@ -3,26 +3,44 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Exercícios JS — Módulo 2</title>
+  <title>Contador</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="app.js" defer></script>
 </head>
 <body>
 
   <div class="container">
 
-    <h1>Exercícios JS</h1>
-    <p class="modulo">Módulo 2 — Estruturas de Repetição</p>
+    <a href="../index.html">← Voltar</a>
 
-    <div class="lista">
-      <a href="05-contador/index.html" class="borda">
-        <span>05 — Contador</span><span>›</span>
-      </a>
-      <a href="06-tabuada/index.html" class="borda">
-        <span>06 — Tabuada</span><span>›</span>
-      </a>
-      <a href="07-financiamento/index.html" class="borda">
-        <span>07 — Simulador de Financiamento</span><span>›</span>
-      </a>
+    <h1>Contador</h1>
+    <p>Informe o início, fim e o salto para gerar a contagem.</p>
+
+    <div class="campo">
+      <label for="inicio">Início</label>
+      <input id="inicio" type="number" placeholder="Ex: 1"/>
+    </div>
+
+    <div class="campo">
+      <label for="fim">Fim</label>
+      <input id="fim" type="number" placeholder="Ex: 20"/>
+    </div>
+
+    <div class="campo">
+      <label for="salto">Salto</label>
+      <input id="salto" type="number" placeholder="Ex: 2"/>
+    </div>
+
+    <button onclick="gerarContagem()">Gerar Contagem</button>
+
+    <div class="resultado">
+      <p class="resultado-titulo">Resultado</p>
+        
+      <ul id="lista">
+        <li>1</li>
+        <li>3</li>
+        <li>5</li>
+      </ul>
     </div>
 
   </div>
